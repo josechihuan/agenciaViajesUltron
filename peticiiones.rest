@@ -1,0 +1,31 @@
+GET http://localhost:3000/agenciaviajes/clientes
+
+###
+POST http://localhost:3000/agenciaviajes/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Pedro ",
+  "apellidos": "Perezo",
+  "direccion": "calle sagasta",
+   "telefono": "235689582",
+   "fecha_nacimiento": "1290-12-10",
+   "email": "juanjesu@yahoo.com",
+   "dni":"12536547N"
+}
+###
+PUT http://localhost:3000/agenciaviajes/clientes/7
+Content-Type: application/json
+
+{
+  "nombre": "mario modificado",
+  "apellidos": "Marcelo",
+  "direccion": "calle sagasta",
+   "telefono": "235689582",
+   "fecha_nacimiento": "1290-12-10",
+   "email": "juanjesu@yahoo.com",
+   "dni":"12536547N"
+}
+
+###
+DELETE http://localhost:3000/agenciaviajes/clientes/7
