@@ -29,3 +29,52 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/agenciaviajes/clientes/7
+
+###
+GET http://localhost:3000/agenciaviajes/hoteles
+###
+POST http://localhost:3000/agenciaviajes/hoteles
+Content-Type: application/json
+
+{
+  "nombre": "Catalonia ",
+  "direccion": "Avadez 40",
+  "ciudad": "Centro Madri",
+   "num_estrellas": 5,
+   "descripcion": "con todas las necesidades cubiertas",
+   "tarifa": 190
+   
+}
+
+###
+PUT http://localhost:3000/agenciaviajes/hoteles/2
+Content-Type: application/json
+
+{
+  "nombre": "Real MODIFICADO ",
+  "direccion": "San Agustin",
+  "ciudad": "Centro Ibiza",
+   "num_estrellas": 4,
+   "descripcion": "con todas las necesidades cubiertas",
+   "tarifa": 150
+   
+}
+###
+DELETE http://localhost:3000/agenciaviajes/hoteles/2
+
+###
+GET http://localhost:3000/agenciaviajes/viajes
+
+###
+POST http://localhost:3000/agenciaviajes/viajes
+Content-Type: application/json
+
+{
+  "fecha_salida": "2022-12-10 ",
+  "fecha_vuelta": "2022-12-20 ",
+  "id_vuelo_ida": "12345",
+  "id_vuelo_vuelta": "12355",
+  "hotel_id": 1
+}
+###
+GET http://localhost:3000/agenciaviajes/viajes/1/cliente/1
