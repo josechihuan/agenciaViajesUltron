@@ -12,7 +12,6 @@ const create = ({ nombre, apellidos, direccion, telefono, fecha_nacimiento, emai
 }
 
 
-
 const getById = (pClienteId) => {
 
   return executeQueryOne('select * from clientes where id=?', [pClienteId]);
